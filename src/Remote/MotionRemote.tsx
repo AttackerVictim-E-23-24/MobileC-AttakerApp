@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from 'axios';
 import { BaseURL } from './BaseURL';
 
@@ -23,3 +24,6 @@ export class MotionRemote {
         }
     }
 }
+=======
+// envio de datos al api
+>>>>>>> 98e6242 (registro de movimiento del usuario)
