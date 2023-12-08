@@ -3,7 +3,10 @@ import ExploreContainer from '../View/ExploreContainer';
 import './Home.css';
 import GeolocationView from '../View/GeolocationView';
   
+import MonitoringView from '../View/MonitoringView';
+
 const Home: React.FC = () => {
+
   return (
     <IonPage>
       <IonHeader>
@@ -11,14 +14,14 @@ const Home: React.FC = () => {
           <IonTitle>Attacker App</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen>
+      <IonContent fullscreen >
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
+            <IonTitle size="large">Attacker App</IonTitle>
           </IonToolbar>
         </IonHeader>
-        
-        <GeolocationView />
+
+        <MonitoringView/>
 
       </IonContent>
     </IonPage>
