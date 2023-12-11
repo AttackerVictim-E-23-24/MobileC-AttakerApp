@@ -2,6 +2,9 @@ import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/rea
 import './Home.css';
   
 import MonitoringView from '../View/MonitoringView';
+import { MonitoringRepository } from '../Repository/MonitoringRepository';
+import { useEffect } from 'react';
+import { MonitoringRemote } from '../Remote/MonitoringRemote';
 
 const Home: React.FC = () => {
 
