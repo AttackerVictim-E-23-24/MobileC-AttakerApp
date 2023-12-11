@@ -1,7 +1,9 @@
-// LoginRepository.ts
+// LoginRepository.tsx
 
 import { requestLogin } from '../Remote/LoginRemote';
 
-export const loginRepository = async (username: string, password: string) => {
-  return requestLogin(username, password);
-};
+export class LoginRepository {
+  async login(username: string, password: string) {
+    return requestLogin(username, password);
+  }
+}
