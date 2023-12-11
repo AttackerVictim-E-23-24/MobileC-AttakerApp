@@ -1,3 +1,4 @@
+// GeolocationRepository.ts
 import { Geolocation } from '@capacitor/geolocation';
 import { GeolocationModel } from '../Model/GeolocationModel';
 import { GeolocationRemote } from '../Remote/GeolocationRemote';

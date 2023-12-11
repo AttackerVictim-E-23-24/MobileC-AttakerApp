@@ -23,4 +23,5 @@ export class MonitoringRepository {
         return this.monitoringModel.getFrecuency() * 1000;
     }
 
+
 }
