@@ -13,7 +13,7 @@ import {
     IonItem,
   } from '@ionic/react';
 const MonitoringView: React.FC = () => {
-    const { latitude, longitude, isMoving, timeStamp } = useMonitoringViewModel();
+    const { latitude, longitude, isMoving, timeStamp, offlineTime } = useMonitoringViewModel();
 
 
     return (
@@ -24,6 +24,7 @@ const MonitoringView: React.FC = () => {
             </IonCardHeader>
 
             <IonCardContent>
+                <p>{offlineTime}</p>
                 {latitude && longitude ? 
                 (
                     <div>

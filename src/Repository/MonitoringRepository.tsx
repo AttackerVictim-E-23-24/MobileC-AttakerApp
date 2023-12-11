@@ -5,6 +5,8 @@ import { MonitoringModel } from '../Model/MonitoringModel';
 import { MotionModel } from '../Model/MotionModel';
 import { GeolocationModel } from '../Model/GeolocationModel';
 import { GeolocationRepository } from './GeolocationRepository';
+import { UserModel } from '../Model/UserModel';
+import { MonitoringRemote } from '../Remote/MonitoringRemote';
 
 
 let accelHandler: PluginListenerHandle;
@@ -15,6 +17,7 @@ export class MonitoringRepository{
     private motionModel: MotionModel;
     private geolocationModel: GeolocationModel;
     private geolocationRepository: GeolocationRepository;
+    private monitoringRemote: MonitoringRemote;
 
 
     private observers: ((acceleration: { 
@@ -54,6 +57,16 @@ export class MonitoringRepository{
         this.geolocationModel = new GeolocationModel();
         this.geolocationRepository = new GeolocationRepository(this.geolocationModel);
         this.startListening();
+        this.monitoringRemote = new MonitoringRemote();
+    }
+
+    async initializeData(username: string): Promise<void> {
+        const data = await this.monitoringRemote.getMonitoringData(username);
+        // Aquí puedes hacer lo que necesites con los datos
+        this.monitoringModel.setFrecuency(data.frecuency);
+        this.monitoringModel.setInactivityTime(data.inactivityTime);
+        this.monitoringModel.setOfflineTime(data.offlineTime);
+        this.monitoringModel.setMinDistance(data.minDistance);
     }
 
     stopListening() {
@@ -78,5 +91,8 @@ export class MonitoringRepository{
         return this.geolocationRepository;
     }
 
+    getMonitoringRemote(): MonitoringRemote {
+        return this.monitoringRemote;
+    }
 
 }
