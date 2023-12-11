@@ -1,36 +1,51 @@
 import { useState, useEffect } from 'react';
 import { MonitoringRepository } from '../Repository/MonitoringRepository';
-import { LoginModel } from '../Model/LoginModel'; // Assuming LoginModel is a singleton
 
-const useMonitoringViewModel = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [isSuccessful, setIsSuccessful] = useState(false);
-  const [frecuency, setFrecuency] = useState(0);
+export class MonitoringViewModel {
+    private monitoringRepository: MonitoringRepository = new MonitoringRepository();
+    private subscriber: ((acceleration: { x: number, y: number, z: number }) => void) | null = null;
 
-  const monitoringRepository = new MonitoringRepository();
+    constructor() {
+        this.monitoringRepository.addObserver((acceleration: { x: number, y: number, z: number }) => {
+            this.notifySubscriber();
+        });
+    }
+    
 
-  useEffect(() => {
-    const fetchData = async () => {
-      setIsLoading(true);
-      try {
-        const username = LoginModel.getInstance().getUsername();
-        await monitoringRepository.fetchMonitoringData(username);
-        setFrecuency(monitoringRepository.getFrecuency());
-        setIsSuccessful(true);
-      } catch (error) {
-        setIsSuccessful(false);
-      }
-      setIsLoading(false);
-    };
+    get acceleration() {
+        return this.monitoringRepository.getAccelerationData().getAcceleration();
+    }
 
-    fetchData();
+    getFrecuency() {
+        return this.monitoringRepository.getFrecuency();
+    }
 
-    const intervalId = setInterval(fetchData, 3 * 60 * 60 * 1000); // Fetch data every 3 hours
+    getMonitoringRepository() {
+        return this.monitoringRepository;
+    }
+    
+    subscribe(callback: (acceleration: { x: number, y: number, z: number }) => void) {
+        this.subscriber = callback;
+        this.notifySubscriber(); // Notificar inmediatamente al suscriptor con los datos actuales
 
-    return () => clearInterval(intervalId); // Clean up on unmount
-  }, []);
+        // Devolver una función de desuscripción
+        return () => {
+            this.subscriber = null;
+        };
+    }
 
-  return { isLoading, isSuccessful, frecuency };
-};
+    startListening() {
+        this.monitoringRepository.startListening();
+    }
 
-export default useMonitoringViewModel;
+    stopListening() {
+        this.monitoringRepository.stopListening();
+    }
+    
+    private notifySubscriber() {
+        if (this.subscriber) {
+            this.subscriber(this.acceleration);
+        }
+    }
+
+}
