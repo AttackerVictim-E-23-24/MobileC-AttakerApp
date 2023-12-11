@@ -1,51 +1,31 @@
+// MonitoringViewModel.ts
 import { useEffect, useState } from 'react';
 import { MonitoringRepository } from '../Repository/MonitoringRepository';
+import { MonitoringModel } from '../Model/MonitoringModel';
+import { GeolocationModel } from '../Model/GeolocationModel';
+import { MotionModel } from '../Model/MotionModel';
 
-export class MonitoringViewModel {
-    private monitoringRepository: MonitoringRepository = new MonitoringRepository();
-    private subscriber: ((acceleration: { x: number, y: number, z: number }) => void) | null = null;
+export function useMonitoringViewModel() {
+    const monitoringModel = new MonitoringModel();
+    const geolocationModel = new GeolocationModel();
+    const motionModel = new MotionModel();
+    const monitoringRepository = new MonitoringRepository();
+    const [latitude, setLatitude] = useState(geolocationModel.getLatitude());
+    const [longitude, setLongitude] = useState(geolocationModel.getLongitude());
+    const [isMoving, setIsMoving] = useState(motionModel.isMoving());
+    const [timeStamp, setTimestamp] = useState(geolocationModel.getTimestamp());
 
-    constructor() {
-        this.monitoringRepository.addObserver((acceleration: { x: number, y: number, z: number }) => {
-            this.notifySubscriber();
-        });
-    }
-    
-
-    get acceleration() {
-        return this.monitoringRepository.getAccelerationData().getAcceleration();
-    }
-
-    getFrecuency() {
-        return this.monitoringRepository.getFrecuency();
-    }
-
-    getMonitoringRepository() {
-        return this.monitoringRepository;
-    }
-    
-    subscribe(callback: (acceleration: { x: number, y: number, z: number }) => void) {
-        this.subscriber = callback;
-        this.notifySubscriber(); // Notificar inmediatamente al suscriptor con los datos actuales
-
-        // Devolver una función de desuscripción
-        return () => {
-            this.subscriber = null;
+    useEffect(() => {
+        const fetchPosition = async () => {
+            await monitoringRepository.getGeolocationRepository().setCurrentPosition();
+            setLatitude(monitoringRepository.getGeolocationModel().getLatitude());
+            setLongitude(monitoringRepository.getGeolocationModel().getLongitude());
+            setTimestamp(monitoringRepository.getGeolocationModel().getTimestamp());
+            setIsMoving(monitoringRepository.getMonitoringModel().getMotionModel().isMoving());
         };
-    }
 
-    startListening() {
-        this.monitoringRepository.startListening();
-    }
+        fetchPosition();
+    }, [monitoringRepository, geolocationModel, motionModel]);
 
-    stopListening() {
-        this.monitoringRepository.stopListening();
-    }
-    
-    private notifySubscriber() {
-        if (this.subscriber) {
-            this.subscriber(this.acceleration);
-        }
-    }
-
+    return { latitude, longitude, isMoving , timeStamp};
 }
