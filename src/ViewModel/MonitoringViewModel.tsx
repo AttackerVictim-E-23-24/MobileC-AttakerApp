@@ -1,47 +1,36 @@
-// MonitoringViewModel.ts
-import { useEffect, useState } from 'react';
+import { useState, useEffect } from 'react';
 import { MonitoringRepository } from '../Repository/MonitoringRepository';
-import { MonitoringModel } from '../Model/MonitoringModel';
-import { GeolocationModel } from '../Model/GeolocationModel';
-import { MotionModel } from '../Model/MotionModel';
-import { UserModel } from '../Model/UserModel';
+import { LoginModel } from '../Model/LoginModel'; // Assuming LoginModel is a singleton
 
-export function useMonitoringViewModel() {
-    const monitoringModel = new MonitoringModel();
-    const geolocationModel = new GeolocationModel();
-    const motionModel = new MotionModel();
-    const userModel = UserModel.getInstance();
-    const monitoringRepository = new MonitoringRepository();
-    const [offlineTime, setOfflineTime] = useState(monitoringModel.getOfflineTime());
-    const [latitude, setLatitude] = useState(geolocationModel.getLatitude());
-    const [longitude, setLongitude] = useState(geolocationModel.getLongitude());
-    const [isMoving, setIsMoving] = useState(motionModel.isMoving());
-    const [timeStamp, setTimestamp] = useState(geolocationModel.getTimestamp());
-    const [dataLoaded, setDataLoaded] = useState(false);
-    
-    useEffect(() => {
-        const fetchPosition = async () => {
-            await monitoringRepository.getGeolocationRepository().setCurrentPosition();
-            setLatitude(monitoringRepository.getGeolocationModel().getLatitude());
-            setLongitude(monitoringRepository.getGeolocationModel().getLongitude());
-            setTimestamp(monitoringRepository.getGeolocationModel().getTimestamp());
-            setIsMoving(monitoringRepository.getMonitoringModel().getMotionModel().isMoving());
-        };
+const useMonitoringViewModel = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSuccessful, setIsSuccessful] = useState(false);
+  const [frecuency, setFrecuency] = useState(0);
 
-        fetchPosition();
-    }, [monitoringRepository, geolocationModel, motionModel]);
+  const monitoringRepository = new MonitoringRepository();
 
-    
-    useEffect(() => {
-        const fetchMonitoringData = async () => {
-            if (!dataLoaded) {
-                await monitoringRepository.initializeData(userModel.getUsername());
-                setDataLoaded(true);
-            }
-        };
-        fetchMonitoringData();
-    }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      setIsLoading(true);
+      try {
+        const username = LoginModel.getInstance().getUsername();
+        await monitoringRepository.fetchMonitoringData(username);
+        setFrecuency(monitoringRepository.getFrecuency());
+        setIsSuccessful(true);
+      } catch (error) {
+        setIsSuccessful(false);
+      }
+      setIsLoading(false);
+    };
 
+    fetchData();
 
-    return { latitude, longitude, isMoving , timeStamp, offlineTime};
-}
+    const intervalId = setInterval(fetchData, 3 * 60 * 60 * 1000); // Fetch data every 3 hours
+
+    return () => clearInterval(intervalId); // Clean up on unmount
+  }, []);
+
+  return { isLoading, isSuccessful, frecuency };
+};
+
+export default useMonitoringViewModel;

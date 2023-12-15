@@ -1,10 +1,19 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {  IonHeader,  IonTitle, IonToolbar, 
+  IonPage,
+  IonContent,
+  IonInput,
+  IonButton,
+  IonCard,
+  IonCardHeader,
+  IonCardContent,
+  IonCardTitle,
+  IonLabel,
+  IonItem,} from '@ionic/react';
 import './Home.css';
   
 import MonitoringView from '../View/MonitoringView';
-import { MonitoringRepository } from '../Repository/MonitoringRepository';
-import { useEffect } from 'react';
-import { MonitoringRemote } from '../Remote/MonitoringRemote';
+import GeolocationView from '../View/GeolocationView';
+import MotionView from '../View/MotionView';
 
 const Home: React.FC = () => {
 
@@ -23,6 +32,17 @@ const Home: React.FC = () => {
         </IonHeader>
 
         <MonitoringView/>
+
+        
+        <IonCard>
+          <IonCardHeader>
+              <IonCardTitle>Título de la Tarjeta</IonCardTitle>
+          </IonCardHeader>
+          <IonCardContent>              
+            <GeolocationView/>
+            <MotionView/>
+          </IonCardContent>
+        </IonCard>
 
       </IonContent>
     </IonPage>

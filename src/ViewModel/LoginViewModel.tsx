@@ -1,8 +1,6 @@
 import { useState } from 'react';
 import { LoginRepository } from '../Repository/LoginRepository';
 import { useHistory } from 'react-router-dom';
-import { UserModel } from '../Model/UserModel';
-import { MonitoringRepository } from '../Repository/MonitoringRepository';
 
 const useLoginViewModel = () => {
   const [username, setUsername] = useState('');
@@ -12,7 +10,6 @@ const useLoginViewModel = () => {
   const history = useHistory();
 
   const loginRepository = new LoginRepository();
-  const userModel = UserModel.getInstance();
 
   const login = async () => {
     try {
@@ -24,9 +21,6 @@ const useLoginViewModel = () => {
 
       // Manejar el resultado, por ejemplo, redirigir a la página de inicio si es exitoso
       if (result.authenticated) {
-        
-        // Inicializar el nombre de usuario en UserModel
-        userModel.setUsername(username);
         history.push('/home');
       } else {
         setError(result.message);

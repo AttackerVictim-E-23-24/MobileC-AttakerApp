@@ -1,50 +1,18 @@
-import React, { useEffect, useState } from 'react';
-import { useMonitoringViewModel } from '../ViewModel/MonitoringViewModel';
-import {
-    IonPage,
-    IonContent,
-    IonInput,
-    IonButton,
-    IonCard,
-    IonCardHeader,
-    IonCardContent,
-    IonCardTitle,
-    IonLabel,
-    IonItem,
-  } from '@ionic/react';
-const MonitoringView: React.FC = () => {
-    const { latitude, longitude, isMoving, timeStamp, offlineTime } = useMonitoringViewModel();
+import React from 'react';
+import useMonitoringViewModel from '../ViewModel/MonitoringViewModel';
 
+const MonitoringView = () => {
+  const { isLoading, isSuccessful } = useMonitoringViewModel();
 
-    return (
-        <div>
-            <IonCard>
-            <IonCardHeader>
-                <IonCardTitle>Título de la Tarjeta</IonCardTitle>
-            </IonCardHeader>
+  if (isLoading) {
+    return <p>Loading...</p>;
+  }
 
-            <IonCardContent>
-                <p>{offlineTime}</p>
-                {latitude && longitude ? 
-                (
-                    <div>
-                        <p>Latitude: { latitude.toPrecision(7) }</p>
-                        <p>Longitude: { longitude.toPrecision(7) }</p>
-                        <p>Timestamp: { timeStamp.getHours() + ":" + timeStamp.getMinutes().toLocaleString() }</p>
-                        <p>Moving: { isMoving ? 'is moving' : 'is not moving ' }</p>
-                    </div>
-                ) :
-                (
-                    <div>
-                        <p>
-                            loading...
-                        </p>
-                    </div>
-                ) }
-            </IonCardContent>
-            </IonCard>
-        </div>
-    );
+  if (isSuccessful) {
+    return <p>Data fetched successfully!</p>;
+  }
+
+  return <p>Failed to fetch data.</p>;
 };
 
 export default MonitoringView;
