@@ -1,7 +1,17 @@
-<<<<<<< HEAD
 import axios from 'axios';
 import { BaseURL } from './BaseURL';
+import { BaseURL } from './BaseURL';
 
+export class MotionRemote {
+    private baseUrl: string;
+
+    constructor() {
+        this.baseUrl = BaseURL.baseUrl;
+    }
+
+    public async sendMotion(isMoving: boolean, timeStamp: Date) {
+        try {
+            const response = await axios.post(`${this.baseUrl}/Motion`, { isMoving, timeStamp },{timeout: 5000});
 export class MotionRemote {
     private baseUrl: string;
 
@@ -24,6 +34,3 @@ export class MotionRemote {
         }
     }
 }
-=======
-// envio de datos al api
->>>>>>> 98e6242 (registro de movimiento del usuario)
