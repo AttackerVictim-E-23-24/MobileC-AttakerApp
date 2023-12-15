@@ -54,28 +54,14 @@ export class MonitoringModel {
     private inactivityTime: number;
     private offlineTime: number;
     private minDistance: number;
-    private motionModel: MotionModel;
-    private geolocationModel: GeolocationModel;
 
     constructor() {
-        this.motionModel = new MotionModel();
-        this.geolocationModel = new GeolocationModel();
         this.frecuency = 30;
         this.inactivityTime = 90;
         this.offlineTime = 90;
         this.minDistance = 100;
 
     }
-
-    getMotionModel() {
-        return this.motionModel;
-    }
-
-    setMotionModel(motionModel: MotionModel): void {
-        this.motionModel = motionModel;
-    }
-
-
 
     getFrecuency(): number {
         return this.frecuency;
@@ -107,22 +93,6 @@ export class MonitoringModel {
 
     setMinDistance(minDistance: number): void {
         this.minDistance = minDistance;
-    }
-
-    getAcceleration(): MotionModel {
-        return this.motionModel;
-    }
-
-    setAcceleration(motionModel: MotionModel): void {
-        this.motionModel = motionModel;
-    }
-
-    getGeolocation(): GeolocationModel {
-        return this.geolocationModel;
-    }
-
-    setGeolocation(geolocationModel: GeolocationModel): void {
-        this.geolocationModel = geolocationModel;
     }
 
 }
