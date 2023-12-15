@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Config } from './Config';
+import { BaseURL } from './BaseURL';
 
 export class MonitoringRemote {
     
@@ -10,7 +10,7 @@ export class MonitoringRemote {
         if (this.dataLoaded) {
             throw new Error('Data already loaded');
         }
-        const response = await axios.post(`${Config.baseUrl}/monitoring`, { username });
+        const response = await axios.post(`${BaseURL.baseUrl}/monitoring`, { username });
 
         this.dataLoaded = true;
         

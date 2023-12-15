@@ -2,8 +2,6 @@
 
 import React from 'react';
 import {
-  IonPage,
-  IonContent,
   IonInput,
   IonButton,
   IonCard,
