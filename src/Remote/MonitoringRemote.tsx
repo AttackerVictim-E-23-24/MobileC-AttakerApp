@@ -10,7 +10,7 @@ export class MonitoringRemote {
         if (this.dataLoaded) {
             throw new Error('Data already loaded');
         }
-        const response = await axios.post(`${""}/monitoring`, { username });
+        const response = await axios.post(`${BaseURL.baseUrl}/monitoring`, { username });
 
         this.dataLoaded = true;
         
