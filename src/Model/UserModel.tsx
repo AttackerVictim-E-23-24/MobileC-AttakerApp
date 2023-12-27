@@ -1,14 +1,20 @@
 export class UserModel {
+    private static instance: UserModel;
     private username: string;
     private name: string;
     private lastName: string;
     
-    constructor() {
+    private constructor() {
         this.username = '';
         this.name = '';
         this.lastName = '';
     }
-
+    public static getInstance(): UserModel {
+        if (!UserModel.instance) {
+            UserModel.instance = new UserModel();
+        }
+        return UserModel.instance;
+    }
     public getUsername(): string {
         return this.username;
     }
