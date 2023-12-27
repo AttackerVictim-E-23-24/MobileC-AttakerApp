@@ -10,7 +10,7 @@ export class MotionRemote {
 
     public async sendMotion(isMoving: boolean, timeStamp: Date) {
         try {
-            const response = await axios.post(`${this.baseUrl}/Motion`, { isMoving, timeStamp },{timeout: 5000});
+            const response = await axios.post(`${""}/Motion`, { isMoving, timeStamp },{timeout: 5000});
 
             return response.data;
         } catch (error) {

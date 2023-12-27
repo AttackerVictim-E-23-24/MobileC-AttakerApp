@@ -9,7 +9,7 @@ import {  IonHeader,  IonTitle, IonToolbar,
   IonCardTitle,
   IonLabel,
   IonItem,} from '@ionic/react';
-import './Home.css';
+import './css/Home.css';
   
 import MonitoringView from '../View/MonitoringView';
 import GeolocationView from '../View/GeolocationView';
