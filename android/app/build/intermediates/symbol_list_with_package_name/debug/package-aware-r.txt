@@ -1023,7 +1023,6 @@ string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
 string custom_url_scheme
-string my_string
 string package_name
 string search_menu_title
 string status_bar_notification_info_overflow

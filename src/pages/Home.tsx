@@ -1,14 +1,10 @@
 import {  IonHeader,  IonTitle, IonToolbar, 
   IonPage,
   IonContent,
-  IonInput,
-  IonButton,
   IonCard,
   IonCardHeader,
   IonCardContent,
-  IonCardTitle,
-  IonLabel,
-  IonItem,} from '@ionic/react';
+  IonCardTitle,} from '@ionic/react';
 import './css/Home.css';
   
 import MonitoringView from '../View/MonitoringView';
