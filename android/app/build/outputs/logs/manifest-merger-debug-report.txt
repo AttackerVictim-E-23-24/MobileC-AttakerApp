@@ -11,11 +11,10 @@ INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\
 	android:name
 		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:29:13-62
 manifest
-ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-54:12
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-27:12
+ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [:capacitor-app] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-geolocation] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
@@ -143,38 +142,16 @@ ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app
 		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:41:22-64
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:45:5-81
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-81
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:8:5-81
 	android:name
 		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:45:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
 ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:46:5-79
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:9:5-79
 	android:name
 		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:46:22-76
 uses-feature#android.hardware.location.gps
 ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:47:5-66
 	android:name
 		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:47:19-63
-uses-permission#android.permission.BLUETOOTH_SCAN
-ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:49:5-51:27
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:5-18:31
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:16:5-18:31
-	android:usesPermissionFlags
-		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:50:5-51
-	tools:targetApi
-		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:51:5-24
-	android:name
-		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:49:22-70
-uses-permission#android.permission.BLUETOOTH_CONNECT
-ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:53:5-75
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:31
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:19:5-21:31
-	tools:targetApi
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-28
-	android:name
-		ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:53:22-73
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml:33:13-35:64
 	android:resource
@@ -185,8 +162,6 @@ uses-sdk
 INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
-MERGED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-44
 MERGED from [:capacitor-app] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-app] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\app\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-geolocation] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -279,24 +254,6 @@ MERGED from [org.apache.cordova:framework:10.1.1] C:\Users\atore\.gradle\caches\
 		INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\AndroidManifest.xml
-uses-permission#android.permission.BLUETOOTH
-ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:10:5-12:38
-	android:maxSdkVersion
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:12:9-35
-	android:name
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-52
-uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:13:5-15:38
-	android:maxSdkVersion
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:15:9-35
-	android:name
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:14:9-58
-uses-feature#android.hardware.bluetooth_le
-ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:23:5-25:36
-	android:required
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:25:9-33
-	android:name
-		ADDED from [:capacitor-community-bluetooth-le] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:24:9-53
 uses-permission#android.permission.VIBRATE
 ADDED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
 	android:name

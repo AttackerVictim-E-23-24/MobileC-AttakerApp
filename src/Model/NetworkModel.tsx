@@ -1,10 +1,10 @@
 export class NetworkModel {
     private status: boolean;
-    private timestamp: Date|false;
+    private timestamp: Date;
 
     constructor() {
         this.status = false;
-        this.timestamp = false;
+        this.timestamp = new Date();
     }
 
     getStatus() {
