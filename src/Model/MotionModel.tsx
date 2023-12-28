@@ -1,10 +1,10 @@
 export class MotionModel {
     private movement: { x: number, y: number, z: number };
-    private timestamp: Date|false;
+    private timestamp: Date;
 
     constructor() {
         this.movement = { x: 0, y: 0, z: 0 };
-        this.timestamp = false;
+        this.timestamp = new Date();
     }
 
     getMovement() { 
