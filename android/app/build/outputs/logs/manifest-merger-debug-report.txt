@@ -19,6 +19,7 @@ MERGED from [:capacitor-app] C:\Users\atore\Documents\AttakerVictim\MobileC-Atta
 MERGED from [:capacitor-geolocation] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\geolocation\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:capacitor-keyboard] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-9:12
 MERGED from [:capacitor-status-bar] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-android] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:capacitor-cordova-android-plugins] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\capacitor-cordova-android-plugins\build\intermediates\merged_manifest\debug\AndroidManifest.xml:2:1-11:12
@@ -170,6 +171,8 @@ MERGED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-
 MERGED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-keyboard] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-keyboard] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\keyboard\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-status-bar] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-status-bar] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:capacitor-android] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\android\capacitor\build\intermediates\merged_manifest\debug\AndroidManifest.xml:5:5-44
@@ -258,6 +261,10 @@ uses-permission#android.permission.VIBRATE
 ADDED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-66
 	android:name
 		ADDED from [:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
 activity#com.google.android.gms.common.api.GoogleApiActivity
 ADDED from [com.google.android.gms:play-services-base:18.1.0] C:\Users\atore\.gradle\caches\transforms-3\253990b0cdc8781e9086e72cbacae2e6\transformed\play-services-base-18.1.0\AndroidManifest.xml:20:9-22:45
 	android:exported
