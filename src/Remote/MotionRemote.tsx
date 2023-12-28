@@ -2,15 +2,9 @@ import axios from 'axios';
 import { BaseURL } from './BaseURL';
 
 export class MotionRemote {
-    private baseUrl: string;
-
-    constructor() {
-        this.baseUrl = BaseURL.baseUrl;
-    }
-
     public async sendMotion(isMoving: boolean, timeStamp: Date) {
         try {
-            const response = await axios.post(`${this.baseUrl}/Motion`, { isMoving, timeStamp },{timeout: 5000});
+            const response = await axios.post(`${BaseURL.baseUrl}/Motion`, { isMoving, timeStamp },{timeout: 5000});
 
             return response.data;
         } catch (error) {
