@@ -30,10 +30,9 @@ io.ionic.starter.app-merged_res-28 C:\Users\atore\Documents\AttakerVictim\Mobile
 io.ionic.starter.app-debug-29 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\debug\res
 io.ionic.starter.app-main-30 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\app\src\main\res
 io.ionic.starter.app-packaged_res-31 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\android\capacitor-cordova-android-plugins\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-32 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor-community\bluetooth-le\android\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-33 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\android\capacitor\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-34 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\app\android\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-35 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\geolocation\android\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-36 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-37 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\keyboard\android\build\intermediates\packaged_res\debug
-io.ionic.starter.app-packaged_res-38 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-32 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\android\capacitor\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-33 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\app\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-34 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\geolocation\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-35 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-36 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\keyboard\android\build\intermediates\packaged_res\debug
+io.ionic.starter.app-packaged_res-37 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug

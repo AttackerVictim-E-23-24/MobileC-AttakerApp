@@ -6,7 +6,7 @@ export class MonitoringRepository {
     private monitoringRemote: MonitoringRemote;
 
     constructor() {
-        this.monitoringModel = new MonitoringModel();
+        this.monitoringModel = MonitoringModel.getInstance();
         this.monitoringRemote = new MonitoringRemote();
     }
 
