@@ -36,8 +36,12 @@ io.ionic.starter.app-packaged_res-34 C:\Users\atore\Documents\AttakerVictim\Mobi
 io.ionic.starter.app-packaged_res-35 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\packaged_res\debug
 io.ionic.starter.app-packaged_res-36 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\keyboard\android\build\intermediates\packaged_res\debug
 <<<<<<< HEAD
+<<<<<<< HEAD
 io.ionic.starter.app-packaged_res-37 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\packaged_res\debug
 io.ionic.starter.app-packaged_res-38 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug
 =======
 io.ionic.starter.app-packaged_res-37 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug
 >>>>>>> 48013f8 (arreglos de motion y monitoring en sus peticiones, motion ahora usa rotacion en vez de aceleracion)
+=======
+io.ionic.starter.app-packaged_res-37 C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\status-bar\android\build\intermediates\packaged_res\debug
+>>>>>>> 021d323 (arreglos de motion y monitoring en sus peticiones, motion ahora usa rotacion en vez de aceleracion)
