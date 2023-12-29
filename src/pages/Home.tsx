@@ -1,47 +1,22 @@
-import {  IonHeader,  IonTitle, IonToolbar, 
-  IonPage,
-  IonContent,
-  IonCard,
-  IonCardHeader,
-  IonCardContent,
-  IonCardTitle,} from '@ionic/react';
-import './css/Home.css';
-  
-import MonitoringView from '../View/MonitoringView';
-import GeolocationView from '../View/GeolocationView';
-import MotionView from '../View/MotionView';
-import NetworkView from '../View/NetworkView'; // Importa NetworkView
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import ExploreContainer from '../components/ExploreContainer';
+import './Home.css';
 
 const Home: React.FC = () => {
-
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Attacker App</IonTitle>
+          <IonTitle>Blank</IonTitle>
         </IonToolbar>
       </IonHeader>
-      <IonContent fullscreen >
+      <IonContent fullscreen>
         <IonHeader collapse="condense">
           <IonToolbar>
-            <IonTitle size="large">Attacker App</IonTitle>
+            <IonTitle size="large">Blank</IonTitle>
           </IonToolbar>
         </IonHeader>
-
-        <MonitoringView/>
-
-        
-        <IonCard>
-          <IonCardHeader>
-              <IonCardTitle>Título de la Tarjeta</IonCardTitle>
-          </IonCardHeader>
-          <IonCardContent>              
-            <GeolocationView/>
-            <MotionView/>
-            <NetworkView/>
-          </IonCardContent>
-        </IonCard>
-
+        <ExploreContainer />
       </IonContent>
     </IonPage>
   );
