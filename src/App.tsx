@@ -22,7 +22,7 @@ import '@ionic/react/css/display.css';
 
 
 setupIonicReact();
-
+ 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
