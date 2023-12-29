@@ -1,19 +1,26 @@
-// authApi.ts
-import { Config } from './Config';
+import axios from "axios";
+import { BaseURL } from "./BaseURL";
 
-export const requestLogin = async (username: string, password: string) => {
-  const response = await fetch(`${Config.baseUrl}/Login`, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ username, password }),
-  });
+export class LoginRemote {
+  public async requestLogin(username: string, password: string) {
 
-  if (!response.ok) {
-    throw new Error('Error de red o del servidor');
+    try {
+      const response = await axios.get(
+        `${BaseURL.baseUrl}/users/authUser/${username}/${password}/3`,
+        { timeout: 5000 }
+      );
+
+      const data = response.data;
+
+      if (data.respuesta !== true) {
+        throw new Error(
+          `HTTP error! status: ${response.status}. Message: ${data.mensaje}`
+        );
+      }
+
+      return data;
+    } catch (error) {
+      console.error(error);
+    }
   }
-
-  const data = await response.json();
-  return data;
-};
+}
