@@ -4,7 +4,7 @@ import { BaseURL } from './BaseURL';
 export class GeolocationRemote {
   async sendData(latitude: number, longitude: number, accuracy: number, timeStamp: Date) {
     try {
-      const response = await axios.post(`${""}/Geolocation`, { latitude, longitude, accuracy, timeStamp });
+      const response = await axios.post(`${BaseURL.baseUrl}/Geolocation`, { latitude, longitude, accuracy, timeStamp });
 
       return response.data;
     } catch (error) {
