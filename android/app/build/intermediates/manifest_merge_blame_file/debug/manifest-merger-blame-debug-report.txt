@@ -29,6 +29,9 @@
 19-->[:capacitor-haptics] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\haptics\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-63
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 8526e7acbcf26f54fd02ef11c90493b33a376da9
 20    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 20-->[:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:5-79
 20-->[:capacitor-network] C:\Users\atore\Documents\AttakerVictim\MobileC-AttakerApp\node_modules\@capacitor\network\android\build\intermediates\merged_manifest\debug\AndroidManifest.xml:7:22-76
@@ -191,8 +194,11 @@
 107
 108</manifest>
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> 021d323 (arreglos de motion y monitoring en sus peticiones, motion ahora usa rotacion en vez de aceleracion)
+=======
+>>>>>>> 8526e7acbcf26f54fd02ef11c90493b33a376da9
 20
 21    <permission
 21-->[androidx.core:core:1.10.0] C:\Users\atore\.gradle\caches\transforms-3\ecf1d1c052711426e36f831df7fc2bca\transformed\core-1.10.0\AndroidManifest.xml:22:5-24:47
@@ -352,6 +358,10 @@
 106
 107</manifest>
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 48013f8 (arreglos de motion y monitoring en sus peticiones, motion ahora usa rotacion en vez de aceleracion)
 =======
 >>>>>>> 021d323 (arreglos de motion y monitoring en sus peticiones, motion ahora usa rotacion en vez de aceleracion)
+=======
+>>>>>>> 90e062d3bb9e15b7b316dbb76325646a94386529
+>>>>>>> 8526e7acbcf26f54fd02ef11c90493b33a376da9
